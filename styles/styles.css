@@ -1,0 +1,1329 @@
+body {
+    /* background: #000000; */
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #434343, #000000); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #434343, #000000); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #09090d;
+}
+
+.mobileFooterImg {
+    display: none;
+}
+
+.projects {
+    text-align: center;
+    color: darkorange;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.projects h1 {
+    margin-bottom: 3%;
+}
+
+.project-list {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 1% 2%;
+    width: 16rem;
+    height: 13rem;
+
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 280px;
+    height: 200px;
+    border: 1px solid #141414;
+    perspective: 1000px;
+    margin: 1%;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+}
+
+.flip-card-back {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    background: linear-gradient(to right, red, yellow);
+    font-size: 1.1rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #141414;
+    color: antiquewhite;
+}
+
+.flip-card-front .fas,
+.fab {
+    margin-top: 20px;
+}
+
+.flip-card-front h1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: aquamarine;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: #141414;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card-text {
+    margin: 0 4%;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+
+    background: linear-gradient(to right, red, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gitlink {
+    margin: 2% auto;
+    background-color: #272626;
+    border: none;
+    font-size: 1.3rem;
+    color: antiquewhite;
+}
+
+.gitlink:hover {
+    background-color: rgb(29, 27, 27);
+}
+
+.welcome-page-bg {
+    background-image: url("../images/body-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+/* styles for typeWriter effect */
+#staticText {
+    /* color: #c5f2ac; */
+    font-size: 2.5rem;
+    line-height: 1;
+    font-family: 'HelveticaNeue';
+    font-weight: 100;
+    position: relative;
+    background: linear-gradient(to right, rgb(248, 84, 42), yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#typeline {
+    line-height: 1.2;
+    text-align: center;
+
+}
+
+@-webkit-keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+em {
+    border-right: .1em solid rgb(21, 136, 165);
+    width: 20ch;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 0;
+    color: #3295dd;
+    -webkit-animation: typing 3s steps(21, end),
+        blink-caret .5s step-end infinite alternate;
+}
+
+/* configurations for particles js */
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+.text-center {
+    position: relative;
+    z-index: 100;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 83%;
+
+    /* margin-top: 200px; */
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    /* background-color: khaki; */
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* background-position: 50% 50%; */
+}
+
+#particles-js h1 {
+    /* margin-top: 15%; */
+
+    font-size: 5.7rem;
+    height: 121px;
+    /* color: rgb(255, 255, 64); */
+    font-family: 'Sacramento', cursive;
+    background: -webkit-linear-gradient(rgb(255, 255, 64), rgb(63, 253, 37));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+    text-align: center;
+    padding: 2px 30px !important;
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.2rem;
+    color: #e4e7ed !important;
+}
+
+.nav-link:hover {
+    color: yellowgreen !important;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+.particles-js-canvas-el {
+    /* margin-top: -26%; */
+    position: absolute;
+    z-index: 10;
+}
+
+.fa-angle-double-down {
+    color: darkgray;
+    margin-left: 50%;
+    /* margin-top: -13%; */
+    padding: 1%;
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+    position: absolute;
+    bottom: 20px;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 20px, 0);
+    }
+}
+
+.skills-mobile {
+    display: none;
+}
+
+.about {
+    /* display: flex; */
+    margin: 0 15%;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 260px;
+    margin-right: 40px;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 250px;
+}
+
+.description {
+    width: 800px;
+    margin-top: 2%;
+}
+
+.img-desc {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.about h1 {
+    text-align: center;
+    color: darkorange;
+    font-family: 'Raleway', sans-serif;
+}
+
+.description p {
+    /* color: gainsboro; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    text-align: justify;
+
+    background: linear-gradient(to right, rgb(238, 240, 121) 0%, rgb(22, 255, 41) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+hr {
+    margin-top: 4%;
+    width: 80%;
+    border-top: 3px solid rgba(122, 120, 120, 0.1);
+}
+
+.statsbar ul {
+    /* margin: 0 10%; */
+    color: white;
+    display: flex;
+    list-style: none;
+}
+
+.statsbar ul li {
+    text-align: center;
+    width: 24%;
+}
+
+.number {
+    font-size: 2.5rem;
+    /* color: #009ca8; */
+    color: #4bdbee;
+}
+
+.statsbar p {
+    font-size: 1.3rem;
+}
+
+.pic-links {
+    margin-top: 3%;
+}
+
+.skills {
+    width: 80%;
+    margin: 4% auto;
+}
+
+.skills h1 {
+    text-align: center;
+    margin: 2% 0;
+    color: darkorange;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 5%;
+}
+
+.navbar-toggler {
+    background-color: #46484a;
+}
+
+.skill-container {
+    display: flex;
+    height: 1.4%;
+}
+
+.skill-container p {
+    font-family: 'Baloo 2', cursive;
+    margin-top: -0.8%;
+    width: 10%;
+    /* color: ivory; */
+    color: #29d3e6;
+    font-size: 1.5rem;
+}
+
+.progress {
+    width: 80%;
+    background-color: transparent;
+    margin-left: 2%;
+}
+
+.progress-bar {
+    background: rgb(15, 15, 15);
+    background: linear-gradient(90deg, rgba(15, 15, 15, 1) 15%, rgb(11, 245, 241) 65%);
+    border-radius: inherit;
+}
+
+.metric {
+    display: flex;
+    margin-bottom: 1%;
+}
+
+.begginner {
+    width: 12%;
+    margin-left: 9%;
+    color: #0be61e;
+}
+
+.expert {
+    margin-left: 64.5%;
+    color: #0be61e;
+}
+
+.line-mark {
+    display: flex;
+    margin-top: -1%;
+}
+
+.start {
+    margin-left: 12%;
+    width: 1%;
+    height: 40px;
+    border-left: 2px solid rgb(195, 255, 0);
+}
+
+.end {
+    margin-left: 75%;
+    width: 1%;
+    height: 40px;
+    border-left: 2px solid rgb(195, 255, 0);
+}
+
+.quotes-heading {
+    margin-top: 5%;
+    color: darkorange;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+#carouselExampleIndicators {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    width: -webkit-fill-available;
+    margin: -2%;
+}
+
+.carousel-inner {
+    height: 550px;
+    text-align: center;
+}
+
+.carousel-inner img {
+    border-radius: 50%;
+    width: min-content;
+    margin-top: 4%;
+}
+
+.carousel-inner p {
+    /* color: ivory; */
+    /* color: #edf28f; */
+    font-family: serif;
+    font-style: italic;
+    font-size: 2rem;
+    background: linear-gradient(to right, rgb(72, 255, 0), yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.firstline {
+    margin-top: 3%;
+}
+
+.quoteAuthor {
+    font-size: 1.5rem !important;
+    font-family: 'Baloo Bhaina 2', cursive !important;
+    font-style: normal !important;
+    margin-top: 4% !important;
+    color: antiquewhite !important;
+    -webkit-text-fill-color: antiquewhite !important;
+}
+
+.coffee-invite {
+    text-align: center;
+    margin-top: 4%;
+}
+
+.contact-header {
+    color: darkorange;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+}
+
+.coffee-invite p {
+    /* font-family: 'Sen', sans-serif; */
+    font-family: 'Muli', sans-serif;
+    /* color: ivory; */
+    font-size: 1.5rem;
+    margin-top: 2%;
+    background: linear-gradient(to right, rgb(231, 222, 222), rgb(255, 0, 221));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form input {
+    width: 60%;
+    height: 54px;
+    background-color: rgb(105, 103, 103);
+    font-size: 1.6rem;
+    padding: 0.7% 4.7% 0.7% 0.7%;
+}
+
+.form ul {
+    list-style-type: none;
+}
+
+.fa-arrow-right {
+    color: ivory;
+    background-color: rgb(105, 103, 103);
+    padding: 0 0.6%;
+    margin-left: -4%;
+}
+
+.stepCount {
+    color: ivory;
+    width: 61%;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+.stepMessage {
+    width: 55%;
+    margin: 1% auto;
+    text-align: left;
+    font-family: 'Noto Sans', sans-serif;
+    -webkit-text-fill-color: antiquewhite !important;
+}
+
+.footer {
+    display: flex;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 1.1rem;
+    color: ivory;
+    text-align: left;
+    width: 20%;
+    margin: 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.signature {
+    color: ivory;
+    width: 30%;
+    margin: 5%;
+}
+
+.signature .name {
+    color: rgb(255, 255, 64);
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5rem;
+}
+
+.signature p {
+    font-size: 1.2rem;
+    /* font-family: 'Lato', sans-serif; */
+}
+
+.fa-heart {
+    color: red;
+}
+
+.social-links {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: ivory;
+    width: 20%;
+    margin: 5%;
+}
+
+.link {
+    text-align: center;
+}
+
+.below-profile-pic {
+    width: 260px;
+    margin-right: 40px;
+    margin-top: 3%;
+}
+
+.link i {
+    color: white;
+    margin: 3%;
+}
+
+.footer-image {
+    text-align: center;
+}
+
+.footer-image img {
+    width: 100%;
+    height: auto;
+}
+
+.empty-field {
+    color: white;
+    width: 55%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.thanks-message {
+    font-size: 1.5rem !important;
+    font-family: 'Noto Sans', sans-serif !important;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+
+
+.form-progress {
+    height: 20px;
+    background: antiquewhite;
+    width: 0%;
+    height: 5px;
+    margin-top: -15px;
+    margin-left: 22.5%;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .text-center {
+        color: blue !important;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        width: 0.8em;
+        height: 1em;
+    }
+
+    .description p {
+        font-size: 1rem;
+    }
+
+    .number {
+        font-size: 2rem;
+    }
+
+    .below-profile-pic {
+        margin: 3% auto;
+    }
+
+    .profile-pic {
+        margin: 0 auto;
+    }
+
+    .img-desc {
+        flex-direction: column;
+    }
+
+    #particles-js h1 {
+        font-size: 2.5rem;
+        margin-top: 43%;
+    }
+
+    #typeline {
+        font-size: 1.5rem;
+    }
+
+    .particles-js-canvas-el {
+        /* margin-top: -54%; */
+    }
+
+    .fa-angle-double-down {
+        margin-top: -33%;
+    }
+
+    .statsbar ul {
+        display: block;
+        padding-left: 0;
+    }
+
+    .statsbar p {
+        font-size: 1.2rem;
+    }
+
+    .statsbar ul li {
+        width: 100%;
+    }
+
+    .begginner {
+        width: 40%;
+        margin-left: 1%;
+        font-size: 0.8rem;
+    }
+
+    .expert {
+        margin-left: 40%;
+        font-size: 0.8rem;
+    }
+
+    .line-mark {
+        margin-top: -4%;
+    }
+
+    .skill-container p {
+        font-size: 0.7rem;
+        margin-top: 0;
+    }
+
+    .carousel-inner p {
+        font-size: 1rem;
+    }
+
+    .skills {
+        width: 90%;
+    }
+
+    .quotes-heading {
+        margin-bottom: -8%;
+    }
+
+    .quoteAuthor {
+        font-size: 1rem !important;
+    }
+
+    .carousel-item {
+        margin-top: 14%;
+    }
+
+    .carousel-inner img {
+        width: 26%;
+    }
+
+    .coffee-invite p {
+        font-size: 1rem !important;
+        /* margin-left: 4%;
+        margin-right: 4%; */
+        width: 90%;
+        margin: 3% auto;
+
+    }
+
+    .stepMessage {
+        font-size: 1rem;
+        margin-left: 15.5% !important;
+        margin-bottom: 0.5% !important;
+    }
+
+    .form input {
+        width: 85%;
+        height: 46px;
+        font-size: 1.2rem;
+    }
+
+    .empty-field {
+        margin-left: 16%;
+        width: 80%;
+    }
+
+    .fa-arrow-right {
+        margin-left: -10%;
+    }
+
+    .stepCount {
+        width: 88%;
+        font-size: 1rem;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .social-links {
+        width: 100%;
+        margin: 5% auto;
+    }
+
+    .form-progress {
+        margin-left: 16%;
+    }
+
+    .signature {
+        width: 100%;
+        margin: 5% auto;
+    }
+
+    #carouselExampleIndicators {
+        height: 490px;
+        width: 100%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .text-center {
+        color: green !important;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .description p {
+        font-size: 1.2rem;
+    }
+
+    .profile-pic {
+        margin: 0 auto;
+    }
+
+    .img-desc {
+        flex-direction: column;
+    }
+
+    #particles-js h1 {
+        font-size: 3.2rem;
+        margin-top: 30%;
+    }
+
+    #typeline {
+        font-size: 2rem;
+    }
+
+    .particles-js-canvas-el {
+        /* margin-top: -44%; */
+    }
+
+    .fa-angle-double-down {
+        margin-top: -20%;
+    }
+
+    .number {
+        font-size: 1.3rem;
+    }
+
+    .statsbar p {
+        font-size: 0.8rem;
+    }
+
+    .begginner {
+        width: 31%;
+        font-size: 0.9rem;
+        margin-left: 5%;
+    }
+
+    .expert {
+        margin-left: 46%;
+        font-size: 0.9rem;
+    }
+
+    .line-mark {
+        margin-top: -2.5%;
+    }
+
+    .skill-container p {
+        font-size: 0.7rem;
+    }
+
+    .carousel-inner p {
+        font-size: 1rem !important;
+    }
+
+    .carousel-item {
+        margin-top: 12%;
+    }
+
+    .coffee-invite p {
+        /* font-size: 0.75rem; */
+        width: 90%;
+        font-size: 1rem !important;
+        margin: 2% auto;
+    }
+
+    .stepMessage {
+        margin-left: 26% !important;
+    }
+
+    .fa-arrow-right {
+        margin-left: -9%;
+    }
+
+    .form input {
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .stepCount {
+        font-size: 0.8rem;
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+    }
+
+    .signature .name {
+        font-size: 1.2rem;
+    }
+
+    .signature p {
+        font-size: 0.9rem;
+    }
+
+    .social-links {
+        font-size: 0.8rem;
+        width: 25%;
+        margin-left: 2%;
+    }
+
+    .below-profile-pic {
+        margin: 3% auto;
+    }
+
+    .pic-links {
+        text-align: center;
+    }
+
+    #carouselExampleIndicators {
+        width: 100%;
+    }
+
+    .quotes-heading {
+        margin-bottom: -5%;
+    }
+}
+
+/* Medium devices (tablets,modern phones 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .text-center {
+        color: pink !important;
+    }
+
+    .thanks-message {
+        width: 80% !important;
+    }
+
+    .navbar {
+        z-index: 1000;
+    }
+
+    .mobileFooterImg {
+        display: block;
+    }
+
+    .desktopFooterImg {
+        display: none;
+    }
+
+    #particles-js {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: -78px;
+        height: 93%;
+        /* height: 88%; */
+    }
+
+    .projects {
+        margin-bottom: 8%;
+    }
+
+    .projects>h1 {
+        font-size: 5rem;
+        margin-bottom: 60px;
+    }
+
+    .gitlink {
+        width: 68%;
+        font-size: 2.5rem;
+    }
+
+    .flip-card {
+        width: 40%;
+        height: 360px;
+    }
+
+    .flip-card-back {
+        font-size: 1.8rem;
+    }
+
+    .flip-card-front h1 {
+        font-size: 2.4rem;
+    }
+
+    .flip-card-front .fas,
+    .flip-card-front .fab {
+        font-size: 12em;
+    }
+
+    .about {
+        margin: 5% 8%;
+    }
+
+    #carouselExampleIndicators {
+        display: none;
+    }
+
+    .nav-link {
+        font-size: 3em;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        width: 3em;
+        height: 3em;
+    }
+
+    #typeline {
+        font-size: 3.7rem;
+    }
+
+    .form input {
+        font-size: 1.1rem;
+    }
+
+    .pic-links {
+        text-align: center;
+    }
+
+    .form-progress {
+        margin-left: 13%;
+    }
+
+    .below-profile-pic {
+        margin: 3% auto;
+        font-size: 2.5em;
+        width: 90%;
+        margin-bottom: 6%;
+    }
+
+    .quotes-heading {
+        display: none;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .statsbar ul li {
+        margin: 2% auto;
+        width: 100%;
+    }
+
+    .description p {
+        font-size: 2.7rem;
+    }
+
+    .statsbar ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .profile-pic {
+        margin: 0 auto;
+    }
+
+    .img-desc {
+        flex-direction: column;
+        margin-top: 7%;
+    }
+
+    .form input {
+        font-size: 3rem;
+    }
+
+    .empty-field {
+        width: 58%;
+        font-size: 2rem;
+        margin-left: 13%;
+    }
+
+    .particles-js-canvas-el {
+        /* margin-top: -87%; */
+        display: none;
+    }
+
+    #particles-js h1 {
+        /* margin-top: 73%; */
+        font-size: 7rem;
+        height: 148px;
+
+    }
+
+    #staticText {
+        font-size: 4rem;
+        font-weight: 500;
+    }
+
+    .about h1 {
+        font-size: 5rem;
+    }
+
+    .profile-pic img {
+        width: 150%;
+        margin-left: -25%;
+    }
+
+    .fa-angle-double-down {
+        /* margin-top: -53%; */
+        font-size: 5em;
+        margin-left: 46%;
+        bottom: 50px;
+    }
+
+    .number {
+        font-size: 5rem;
+    }
+
+    .skills h1 {
+        font-size: 5rem;
+    }
+
+    .statsbar p {
+        font-size: 3rem;
+    }
+
+    .link {
+        font-size: 2.9rem;
+    }
+
+
+    .metric,
+    .skill-container,
+    .line-mark {
+        display: none;
+    }
+
+    .skills {
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    .skills-mobile {
+        display: block;
+    }
+
+    .skills-mobile th {
+        font-family: 'Comic Neue', cursive;
+        font-size: 3.5rem;
+        color: aqua;
+    }
+
+    .skills-mobile table {
+        text-align: center;
+        color: antiquewhite;
+        background-color: transparent;
+    }
+
+    .skills-mobile tbody {
+        font-family: 'Noto Sans', sans-serif;
+        color: burlywood;
+    }
+
+    .skills-mobile tr {
+        font-size: 3rem;
+    }
+
+    .skills-mobile td {
+        border-top: none;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .stepMessage {
+        width: 49% !important;
+        /* margin-left: 24% !important; */
+        margin-bottom: 0.5% !important;
+    }
+
+    .coffee-invite p {
+        font-size: 3rem !important;
+        margin: 3% auto;
+        text-align: justify;
+        width: 70%;
+    }
+
+    .social-links p {
+        display: none;
+    }
+
+    .contact-header {
+        font-size: 5rem;
+        margin-bottom: 5%;
+    }
+
+    .fa-arrow-right {
+        margin-left: -6%;
+        font-size: 2.5em;
+    }
+
+    .form input {
+        width: 83%;
+        height: 82px;
+    }
+
+    .stepMessage {
+        width: 75% !important;
+        /* margin-left: 24%; */
+    }
+
+    .stepCount {
+        font-size: 2.5rem;
+        width: 84%;
+    }
+
+    .signature {
+        width: 95%;
+        margin: 3% auto;
+    }
+
+    .signature .name {
+        font-size: 6rem;
+    }
+
+    .signature p {
+        font-size: 3rem;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .social-links {
+        width: 80%;
+        font-size: 4rem;
+        margin: 2% auto;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .text-center {
+        color: red !important;
+    }
+
+    #carouselExampleIndicators {
+        width: 100%;
+    }
+
+    .form input {
+        font-size: 1.3rem;
+    }
+
+    .line-mark {
+        margin-top: -2.4%;
+    }
+
+    .begginner {
+        width: 16%;
+    }
+
+    .expert {
+        margin-left: 61%;
+    }
+
+    .skill-container p {
+        font-size: 1.2rem;
+    }
+
+    .carousel-item {
+        margin: 0%;
+    }
+
+    .carousel-inner p {
+        font-size: 1.7rem;
+    }
+
+    .coffee-invite p {
+        font-size: 1.2rem !important;
+    }
+
+    .fa-arrow-right {
+        margin-left: -5%;
+    }
+
+    .form-progress {
+        margin-left: 23.4%;
+    }
+
+    .signature .name {
+        font-size: 2.2rem;
+    }
+
+    .copyright {
+        font-size: 1rem;
+    }
+
+    .social-links {
+        font-size: 1rem;
+    }
+
+    .signature p {
+        font-size: 1rem;
+    }
+
+    .number {
+        font-size: 2rem;
+    }
+
+    .particles-js-canvas-el {
+        /* margin-top: -30%; */
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .text-center h1 {
+        /* color: orange !important; */
+    }
+
+    .particles-js-canvas-el {
+        /* margin-top: -26%; */
+    }
+}
